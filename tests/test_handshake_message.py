@@ -1,5 +1,8 @@
 import unittest
-from handshake_message import handshake_message
+import mount_folders
+mount_folders.mount() # sets other projectfolders in searchpath
+from handshake_message import handshake_message # must be after mount
+
 
 class test_handshake_message(unittest.TestCase):
     
