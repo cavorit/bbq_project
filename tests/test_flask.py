@@ -14,7 +14,7 @@ class Flask_Test(unittest.TestCase):
 
     def test_models_redirect(self):
         r = self.app.get('/models/handshake')
-        assert r.status_code == 200
+        assert r.status_code == 308
         assert b'/models folder is now /services' in r.data
 
     def test_services_req(self):
