@@ -2,7 +2,7 @@ def modelRequire():
     PASS
 
 def modelTransform(JSONstringREQ):
-    PASS
+    return None
 
 def modelPredict():
     """ Handshake message """
