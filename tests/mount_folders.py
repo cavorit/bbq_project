@@ -18,9 +18,9 @@ flaskfolder = rootfolder + '/app'
 if __name__ == '__main__':
     
     my_paths = {'root' : rootfolder,
-                 'test' : testfolder,
-                 'services' : servicesfolder,
-                 'flask' : flaskfolder}    
+                'test' : testfolder,
+                'services' : servicesfolder,
+                'flask' : flaskfolder}    
     for key in my_paths:
         print(key + ':' + my_paths[key])
 
