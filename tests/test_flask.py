@@ -13,8 +13,8 @@ class Flask_Test(unittest.TestCase):
 
     def test_models_redirect(self):
         r = self.app.get('/models/handshake')
-        assert r.status_code == 308
-        assert b'/models folder is now /services' in r.data
+        assert r.status_code == 301
+        #assert b'/models folder is now /services' in r.data
 
     def test_services(self):
         r = self.app.get('/services/handshake')
