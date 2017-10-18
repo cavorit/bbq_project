@@ -9,7 +9,7 @@ root_path = '/'.join(root_path)
 
 # project modules from /services
 sys.path.append(str(root_path) + '/services')
-import handshake_message
+import handshake
 
 #from handshake_message import handshake_message
 

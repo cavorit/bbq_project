@@ -1,7 +1,7 @@
 def modelRequire():
     PASS
 
-def modelTransform():
+def modelTransform(JSONstringREQ):
     PASS
 
 def modelPredict():
