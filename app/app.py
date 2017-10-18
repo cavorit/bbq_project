@@ -15,9 +15,10 @@ import handshake
 
 app = Flask(__name__)
 
-@app.route('/')
-def handshaker():
-    return handshake_message.modelPredict()
+@app.route('/services/handshake')
+def do_the_handshake():
+    handshake.modelRequire()
+    return handshake.modelPredict(handshake.modelTransform('{}'))
 
 
 if __name__=='__main__':
